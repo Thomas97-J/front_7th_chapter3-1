@@ -5,6 +5,7 @@ export { Input } from "./input"
 export { Textarea } from "./textarea"
 export { Checkbox } from "./checkbox"
 export { Label } from "./label"
+export { NativeSelect } from "./native-select"
 
 // Molecules
 export {
