@@ -171,6 +171,68 @@ export const ContentOnly: Story = {
   ),
 };
 
+export const StatCards: Story = {
+  render: () => (
+    <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+      <Card variant="stat" statColor="blue">
+        <p className="text-sm text-gray-600 mb-1">전체</p>
+        <p className="text-3xl font-bold text-blue-600">4</p>
+      </Card>
+
+      <Card variant="stat" statColor="green">
+        <p className="text-sm text-gray-600 mb-1">게시됨</p>
+        <p className="text-3xl font-bold text-green-600">1</p>
+      </Card>
+
+      <Card variant="stat" statColor="orange">
+        <p className="text-sm text-gray-600 mb-1">임시저장</p>
+        <p className="text-3xl font-bold text-orange-600">2</p>
+      </Card>
+
+      <Card variant="stat" statColor="red">
+        <p className="text-sm text-gray-600 mb-1">보관됨</p>
+        <p className="text-3xl font-bold text-red-600">1</p>
+      </Card>
+
+      <Card variant="stat" statColor="gray">
+        <p className="text-sm text-gray-600 mb-1">총 조회수</p>
+        <p className="text-3xl font-bold text-gray-700">3340</p>
+      </Card>
+    </div>
+  ),
+};
+
+export const StatCardsUser: Story = {
+  render: () => (
+    <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+      <Card variant="stat" statColor="blue">
+        <p className="text-sm text-gray-600 mb-1">전체</p>
+        <p className="text-3xl font-bold text-blue-600">10</p>
+      </Card>
+
+      <Card variant="stat" statColor="green">
+        <p className="text-sm text-gray-600 mb-1">활성</p>
+        <p className="text-3xl font-bold text-green-600">8</p>
+      </Card>
+
+      <Card variant="stat" statColor="orange">
+        <p className="text-sm text-gray-600 mb-1">비활성</p>
+        <p className="text-3xl font-bold text-orange-600">1</p>
+      </Card>
+
+      <Card variant="stat" statColor="red">
+        <p className="text-sm text-gray-600 mb-1">정지</p>
+        <p className="text-3xl font-bold text-red-600">1</p>
+      </Card>
+
+      <Card variant="stat" statColor="gray">
+        <p className="text-sm text-gray-600 mb-1">관리자</p>
+        <p className="text-3xl font-bold text-gray-700">2</p>
+      </Card>
+    </div>
+  ),
+};
+
 export const ComplexLayout: Story = {
   render: () => (
     <Card className="w-[500px]">
