@@ -82,17 +82,19 @@ function Modal({
     }
   }, [open])
 
+  if (!open) return null
+
   return (
     <>
       <div
-        className={cn(modalOverlayVariants({ open }))}
+        className={cn(modalOverlayVariants({ open: true }))}
         onClick={closeOnOverlayClick ? onClose : undefined}
         aria-hidden="true"
       />
       <div
         role="dialog"
         aria-modal="true"
-        className={cn(modalContentVariants({ size, open }))}
+        className={cn(modalContentVariants({ size, open: true }))}
       >
         {children}
       </div>
