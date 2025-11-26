@@ -1,7 +1,0 @@
-{
-  "files": [],
-  "references": [
-    { "path": "./packages/before" },
-    { "path": "./packages/after" }
-  ]
-}
