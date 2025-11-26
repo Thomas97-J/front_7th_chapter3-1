@@ -12,11 +12,11 @@ const cardVariants = cva(
         stat: "p-4 border-2",
       },
       statColor: {
-        blue: "border-blue-300 bg-blue-50",
-        green: "border-green-300 bg-green-50",
-        orange: "border-orange-300 bg-orange-50",
-        red: "border-red-300 bg-red-50",
-        gray: "border-gray-300 bg-gray-50",
+        blue: "border-blue-300 bg-blue-50 dark:border-blue-700 dark:bg-blue-950",
+        green: "border-green-300 bg-green-50 dark:border-green-700 dark:bg-green-950",
+        orange: "border-orange-300 bg-orange-50 dark:border-orange-700 dark:bg-orange-950",
+        red: "border-red-300 bg-red-50 dark:border-red-700 dark:bg-red-950",
+        gray: "border-gray-300 bg-gray-50 dark:border-gray-700 dark:bg-gray-900",
       },
       rounded: {
         none: "rounded-none",

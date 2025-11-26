@@ -32,7 +32,7 @@ export const ManagementPage = () => {
   const stats = getStats();
 
   return (
-    <div className="min-h-screen flex justify-center items-center w-full bg-gray-50 py-8">
+    <div className="min-h-screen flex justify-center items-center w-full bg-muted py-8">
       <div className="w-4/5 mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         <ManagementHeader />
 
