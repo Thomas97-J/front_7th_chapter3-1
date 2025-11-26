@@ -5,7 +5,7 @@ import { X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const modalOverlayVariants = cva(
-  "fixed inset-0 z-50 bg-black/50 backdrop-blur-sm transition-opacity",
+  "fixed top-0 left-0 right-0 bottom-0 w-full h-full z-50 bg-black/50 backdrop-blur-sm transition-opacity",
   {
     variants: {
       open: {
