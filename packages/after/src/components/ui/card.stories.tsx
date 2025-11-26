@@ -174,27 +174,27 @@ export const ContentOnly: Story = {
 export const StatCards: Story = {
   render: () => (
     <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-      <Card variant="stat" statColor="blue">
+      <Card variant="stat" statColor="blue" rounded="xl">
         <p className="text-sm text-gray-600 mb-1">전체</p>
         <p className="text-3xl font-bold text-blue-600">4</p>
       </Card>
 
-      <Card variant="stat" statColor="green">
+      <Card variant="stat" statColor="green" rounded="xl">
         <p className="text-sm text-gray-600 mb-1">게시됨</p>
         <p className="text-3xl font-bold text-green-600">1</p>
       </Card>
 
-      <Card variant="stat" statColor="orange">
+      <Card variant="stat" statColor="orange" rounded="xl">
         <p className="text-sm text-gray-600 mb-1">임시저장</p>
         <p className="text-3xl font-bold text-orange-600">2</p>
       </Card>
 
-      <Card variant="stat" statColor="red">
+      <Card variant="stat" statColor="red" rounded="xl">
         <p className="text-sm text-gray-600 mb-1">보관됨</p>
         <p className="text-3xl font-bold text-red-600">1</p>
       </Card>
 
-      <Card variant="stat" statColor="gray">
+      <Card variant="stat" statColor="gray" rounded="xl">
         <p className="text-sm text-gray-600 mb-1">총 조회수</p>
         <p className="text-3xl font-bold text-gray-700">3340</p>
       </Card>
@@ -205,27 +205,27 @@ export const StatCards: Story = {
 export const StatCardsUser: Story = {
   render: () => (
     <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-      <Card variant="stat" statColor="blue">
+      <Card variant="stat" statColor="blue" rounded="xl">
         <p className="text-sm text-gray-600 mb-1">전체</p>
         <p className="text-3xl font-bold text-blue-600">10</p>
       </Card>
 
-      <Card variant="stat" statColor="green">
+      <Card variant="stat" statColor="green" rounded="xl">
         <p className="text-sm text-gray-600 mb-1">활성</p>
         <p className="text-3xl font-bold text-green-600">8</p>
       </Card>
 
-      <Card variant="stat" statColor="orange">
+      <Card variant="stat" statColor="orange" rounded="xl">
         <p className="text-sm text-gray-600 mb-1">비활성</p>
         <p className="text-3xl font-bold text-orange-600">1</p>
       </Card>
 
-      <Card variant="stat" statColor="red">
+      <Card variant="stat" statColor="red" rounded="xl">
         <p className="text-sm text-gray-600 mb-1">정지</p>
         <p className="text-3xl font-bold text-red-600">1</p>
       </Card>
 
-      <Card variant="stat" statColor="gray">
+      <Card variant="stat" statColor="gray" rounded="xl">
         <p className="text-sm text-gray-600 mb-1">관리자</p>
         <p className="text-3xl font-bold text-gray-700">2</p>
       </Card>
@@ -265,5 +265,52 @@ export const ComplexLayout: Story = {
         </div>
       </CardFooter>
     </Card>
+  ),
+};
+
+export const RoundedVariants: Story = {
+  render: () => (
+    <div className="space-y-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <Card rounded="none" className="p-6">
+          <p className="text-sm font-medium mb-2">rounded: none</p>
+          <p className="text-xs text-muted-foreground">No border radius</p>
+        </Card>
+
+        <Card rounded="sm" className="p-6">
+          <p className="text-sm font-medium mb-2">rounded: sm</p>
+          <p className="text-xs text-muted-foreground">2px radius</p>
+        </Card>
+
+        <Card rounded="md" className="p-6">
+          <p className="text-sm font-medium mb-2">rounded: md</p>
+          <p className="text-xs text-muted-foreground">6px radius</p>
+        </Card>
+
+        <Card rounded="lg" className="p-6">
+          <p className="text-sm font-medium mb-2">rounded: lg</p>
+          <p className="text-xs text-muted-foreground">8px radius</p>
+        </Card>
+
+        <Card rounded="xl" className="p-6">
+          <p className="text-sm font-medium mb-2">rounded: xl</p>
+          <p className="text-xs text-muted-foreground">12px radius</p>
+        </Card>
+
+        <Card rounded="2xl" className="p-6">
+          <p className="text-sm font-medium mb-2">rounded: 2xl</p>
+          <p className="text-xs text-muted-foreground">16px radius</p>
+        </Card>
+
+        <Card rounded="3xl" className="p-6">
+          <p className="text-sm font-medium mb-2">rounded: 3xl</p>
+          <p className="text-xs text-muted-foreground">24px radius</p>
+        </Card>
+
+        <Card rounded="full" className="p-6 aspect-square flex items-center justify-center">
+          <p className="text-sm font-medium text-center">rounded: full</p>
+        </Card>
+      </div>
+    </div>
   ),
 };

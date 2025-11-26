@@ -1,4 +1,4 @@
-import { Button, Card, CardContent, Alert, AlertDescription } from "@/components/ui";
+import { Button, Card, Alert, AlertDescription } from "@/components/ui";
 import { useManagement } from "./hooks/useManagement";
 import { ManagementHeader } from "./components/ManagementHeader";
 import { EntityTypeTabs } from "./components/EntityTypeTabs";
@@ -32,11 +32,11 @@ export const ManagementPage = () => {
   const stats = getStats();
 
   return (
-    <div className="container py-6 space-y-6">
-      <ManagementHeader />
+    <div className="min-h-screen flex justify-center items-center w-full bg-gray-50 py-8">
+      <div className="w-4/5 mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        <ManagementHeader />
 
-      <Card>
-        <CardContent className="p-6 space-y-6">
+        <Card className="p-10 space-y-1">
           <EntityTypeTabs
             entityType={entityType}
             onEntityTypeChange={setEntityType}
@@ -65,27 +65,27 @@ export const ManagementPage = () => {
             onDelete={handleDelete}
             onStatusAction={handleStatusAction}
           />
-        </CardContent>
-      </Card>
+        </Card>
 
-      <CreateModal
-        isOpen={createModal.isOpen}
-        onClose={createModal.onClose}
-        entityType={entityType}
-        formData={formData}
-        onFormDataChange={setFormData}
-        onCreate={handleCreate}
-      />
+        <CreateModal
+          isOpen={createModal.isOpen}
+          onClose={createModal.onClose}
+          entityType={entityType}
+          formData={formData}
+          onFormDataChange={setFormData}
+          onCreate={handleCreate}
+        />
 
-      <EditModal
-        isOpen={editModal.isOpen}
-        onClose={editModal.onClose}
-        entityType={entityType}
-        selectedItem={selectedItem}
-        formData={formData}
-        onFormDataChange={setFormData}
-        onUpdate={handleUpdate}
-      />
+        <EditModal
+          isOpen={editModal.isOpen}
+          onClose={editModal.onClose}
+          entityType={entityType}
+          selectedItem={selectedItem}
+          formData={formData}
+          onFormDataChange={setFormData}
+          onUpdate={handleUpdate}
+        />
+      </div>
     </div>
   );
 };
